@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using UnityEngine.SceneManagement;
 
 namespace TooSpookyForMe
 {
@@ -7,7 +8,12 @@ namespace TooSpookyForMe
 	{
 		static bool Prefix()
 		{
-			return false;
+			if (!TooSpookyForMe.Instance.Config.TryGetEntry<bool>("", "enable_menu", out var enable))
+			{
+				return false;
+			}
+
+			return SceneManager.GetActiveScene().name == "Main Menu" && enable.Value;
 		}
 	}
 }
