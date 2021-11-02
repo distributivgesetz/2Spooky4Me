@@ -7,7 +7,8 @@ namespace TooSpookyForMe
     {
 		Halloween,
 		Christmas,
-		Easter
+		Easter,
+		None
     }
 
 	[BepInPlugin("net.distrilul.2spooky4me", "2Spooky4Me", "1.1")]
