@@ -1,15 +1,15 @@
-﻿using BepInEx;
+using BepInEx;
 using HarmonyLib;
 
 namespace TooSpookyForMe
 {
 	public enum TimeOfYear
-    {
+    	{
 		Halloween,
 		Christmas,
 		Easter,
 		None
-    }
+    	}
 
 	[BepInPlugin("net.distrilul.2spooky4me", "2Spooky4Me", "1.1")]
 	public class TooSpookyForMe : BaseUnityPlugin
