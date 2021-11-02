@@ -4,14 +4,14 @@ using HarmonyLib;
 namespace TooSpookyForMe
 {
 	public enum TimeOfYear
-    	{
+	{
 		Halloween,
 		Christmas,
 		Easter,
 		None
-    	}
+	}
 
-	[BepInPlugin("net.distrilul.2spooky4me", "2Spooky4Me", "1.1")]
+	[BepInPlugin("net.distrilul.2spooky4me", "2Spooky4Me", "1.2")]
 	public class TooSpookyForMe : BaseUnityPlugin
 	{
 		public static TooSpookyForMe Instance { get; private set; }
